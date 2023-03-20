@@ -17,7 +17,7 @@ RUN yum -y install java
 RUN java -version
 
 WORKDIR /opt/tomcat/webapps
-COPY /var/lib/jenkins/workspace/Test-Jobs/java-application/target/. /opt/tomcat/webapps
+COPY *.jar /opt/tomcat/webapps
 
 EXPOSE 80
 
